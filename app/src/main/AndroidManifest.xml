@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nhatthanh.thanhlnph16387_ass_mob2041">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/managerbook"
+        android:label="Thư viện Phương Nam"
+        android:roundIcon="@drawable/managerbook"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Thanhlnph16387_ASS_MOB2041">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ChaoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>
