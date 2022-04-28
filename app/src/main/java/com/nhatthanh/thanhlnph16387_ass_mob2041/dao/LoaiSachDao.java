@@ -36,7 +36,7 @@ public class LoaiSachDao {
         List<LoaiSach> list=new ArrayList<>();
         Cursor c=db.rawQuery(sql,selectionArgs);
         if (c.getCount() > 0) {
-            c.moveToNext();
+            c.moveToFirst();
             while (!c.isAfterLast()) {
                 int a = c.getInt(0);
                 String b = c.getString(1);

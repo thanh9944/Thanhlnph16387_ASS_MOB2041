@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
         if (strUser.isEmpty() || strPass.isEmpty()) {
             Toast.makeText(LoginActivity.this, "Tên đăng nhập và pasword không để trống", Toast.LENGTH_SHORT).show();
         } else {
-            if (thuThuDao.checkLogin(strUser, strPass) > 0 || strPass.equals("admin") && strPass.equals("admin")) {
+            if (thuThuDao.checkLogin(strUser, strPass) > 0 || strUser.equals("admin") && strPass.equals("admin")) {
                 Toast.makeText(LoginActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                 checkRememberUser(strUser,strPass,remember.isChecked());
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
